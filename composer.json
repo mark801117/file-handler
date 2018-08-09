@@ -1,0 +1,27 @@
+{
+    "name": "cloud/file-handler",
+    "type": "library",
+    "description": "file handler can upload file, rmfile, rmdir ...",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Cloud",
+            "email": "mark801117@gmail.com"
+        }    
+    ],
+    "autoload": {
+        "psr-4": {
+            "Cloud\\Filehandler\\": "src"
+        }
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/mark801117/string-helper"
+    }],
+    "require": {
+        "cloud/string-helper": "^1.0"
+    },
+    "require-dev": {
+        "slim/http": "^0.1"
+    }
+}
