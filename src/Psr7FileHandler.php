@@ -22,7 +22,8 @@ class Psr7FileHandler
     }
     public function getSubName()
     {
-        return end(explode('.', $this->file->getClientFilename()));
+        $exploded = explode('.', $this->file->getClientFilename());
+        return end($exploded);
     }    
     public function getFileSize()
     {
